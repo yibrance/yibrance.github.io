@@ -305,6 +305,10 @@ a {
     overflow: scroll;
 }
 
+video {
+    filter: sepia(2) brightness(2.5);
+}
+
 #map .desc {
     width: 25vw;
     display: flex;
