@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Black Chancery Font -->
+    <link href="http://fonts.cdnfonts.com/css/black-chancery" rel="stylesheet">
+
+    <!-- Blinker Font -->
+    <link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet'>
+
+    <!-- Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" herf="assets/css/animate.css">
+
+
+    <!-- AOS Script -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery.lettering.js"></script>
+    <script src="./assets/js/jquery.textillate.js"></script>
+    <script src="./assets/js/jquery.waypoints.min.js"></script>
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+    <!-- Main Loader Starts -->
+
+    <div id="start">
+        <div class="content">
+            <div class="main-logo">
+                <img class="logo_back" src="./assets/images/logo_back.png" />
+                <img class="logo_front" src="./assets/images/logo_front.png" />
+            </div>
+
+            <div id="loader">
+                <div id="helpBar"></div>
+                <div id="barValue"></div>
+                <div id="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Loader Ends -->
+
+    <div id="mainBody">
+
+        <!-- Main/Nav Page Starts -->
+
+        <div id="main">
+            <div class="banner">
+                <div class="nav">
+                    <div class="left">
+                        <div class="home-nav">
+                            <div class="home-nav-line"></div>
+                            <a href="#main">
+
+                                <div class="nav-circle" onmouseover="nav_scale_up(this)" onmouseout="nav_scale_down(this)">
+                                    <img src="assets/images/nav_back.png" style="position: relative; height: 6vh; width: 6vh;" />
+                                    <i class="fa fa-home" style="position: absolute;"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="about-nav">
+                            <div class="about-nav-line"></div>
+                            <a href="#about">
+                                <div class="nav-circle" onmouseover="nav_scale_up(this)" onmouseout="nav_scale_down(this)">
+                                    <img src="assets/images/nav_back.png" style="position: relative; height: 6vh; width: 6vh;" />
+                                    <i class="bi bi-info" style="font-size: 3.5vh; position: absolute;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="main-logo">
+                        <img class="logo_back" src="./assets/images/logo_back.png" />
+                        <img class="logo_front" src="./assets/images/logo_front.png" />
+                    </div> -->
+
+                    <div class="right">
+                        <div class="team-nav">
+                            <div class="team-nav-line"></div>
+                            <a href="#team">
+                                <div class="nav-circle" onmouseover="nav_scale_up(this)" onmouseout="nav_scale_down(this)">
+                                    <img src="assets/images/nav_back.png" style="position: relative; height: 6vh; width: 6vh;" />
+                                    <i class="fa fa-group" style="position: absolute;"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact-nav">
+                            <div class="contact-nav-line"></div>
+                            <a href="#contact">
+                                <div class="nav-circle" onmouseover="nav_scale_up(this)" onmouseout="nav_scale_down(this)">
+                                    <img src="assets/images/nav_back.png" style="position: relative; height: 6vh; width: 6vh;" />
+                                    <i class="fa fa-phone" style="position: absolute;"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="map">
+
+            <img class="mapImg" src="./assets/images/mapsm.jpg" usemap="#workmap" id="mainMap">
+
+
+            <div class="desc">
+                <img src="./assets/images/map_desc.png" alt="">
+
+                <div class="text">
+                    <div class="map-text" style="position: absolute;">Creating a paradigm where traditions won’t just exist, they will bloom and reach every corner of the world possible.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about">
+            <div class="head">
+                <div class="about-head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What we do&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+            <div class="body">
+                <div class="section">
+                    <img class="img" src="./assets/images/whatwedo1.png" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">Bringing togather most exotic creactions from motherland India at one place </div>
+                </div>
+                <div class="section">
+                    <img class="img" src="./assets/images/whatwedo2.png" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+                    <div class="text" data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">Only finely woven product from top manufacturers ensuring mesmerising quality </div>
+                </div>
+                <div class="section">
+                    <img class="img" src="./assets/images/whatwedo3.png" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="1200">
+                    <div class="text" data-aos="fade-right" data-aos-duration="500" data-aos-delay="500">Elegant solution to every problem of manufacturer and resellers just like the products we bring. </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="why-us">
+            <div class="head">
+                <div class="why-us-head" style="padding-left: 20px; padding-right: 20px;">We simply make your business better by!</div>
+            </div>
+            <div class="body">
+                <div class="section">
+                    <img class="img" src="./assets/images/why_us_1.png" data-aos="zoom-in" data-aos-duration="500">
+
+
+                    <div class="text" data-aos="fade-right" data-aos-duration="500">Optimizing Supply Chain</div>
+                </div>
+                <div class="section">
+                    <img class="img" src="./assets/images/why_us_2.png" data-aos="zoom-in" data-aos-duration="500">
+
+                    <div class="text" data-aos="fade-left" data-aos-duration="500">Bringing the entire market on fingertips </div>
+                </div>
+                <div class="section">
+                    <img class="img" src="./assets/images/why_us_3.png" data-aos="zoom-in" data-aos-duration="500">
+
+                    <div class="text" data-aos="fade-right" data-aos-duration="500">Unleashing new possibilities</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="team">
+            <div class="head">
+                <div class="team-head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Team&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+            <div class="body">
+                <div class="section">
+                    <div class="middle">
+                        <img class="img" src="assets/images/logo_back.png" />
+                        <div class="member-pic">
+                            <div class="overlay">
+
+                                <a href="https://twitter.com/piyushg9794"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/piyushg9794/"><i class="fa fa-linkedin"></i></a>
+                                <a href="http://instagram.com/piyushg9794"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+                            <img data-aos="zoom-in" data-aos-duration="500" src="assets/images/piyush.jpg" width="100%" height="100%" />
+                        </div>
+                    </div>
+                    <div class="top" data-aos="fade-up" data-aos-duration="500">Piyush Gupta</div>
+                    <div class="designation" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">Co-founder & CEO</div>
+                </div>
+                <div class="section">
+
+                    <div class="middle">
+                        <img class="img" src="assets/images/logo_back.png" />
+                        <div class="member-pic">
+                            <div class="overlay">
+
+                                <a href="https://twitter.com/Sarthak37226308"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/sarthak-gupta-286815179/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/_imsarthak/"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+                            <img data-aos="zoom-in" data-aos-duration="500" src="assets/images/sarthak.jpg" width="100%" height="100%" />
+                        </div>
+                    </div>
+                    <div class="top" data-aos="fade-up" data-aos-duration="500">Sarthak Gupta</div>
+                    <div class="designation" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">Co-founder & CTO</div>
+                </div>
+                <div class="section">
+                    <div class="middle">
+                        <img class="img" src="assets/images/logo_back.png" />
+                        <div class="member-pic">
+                            <div class="overlay">
+
+                                <a href="https://twitter.com/navneetatri08"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/navneet-atri-0019aa202/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/atrinavneet/"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+                            <img data-aos="zoom-in" data-aos-duration="500" src="assets/images/navneet.jpg" width="100%" height="100%" />
+                        </div>
+                    </div>
+                    <div class="top" data-aos="fade-up" data-aos-duration="500">Navneet Atri</div>
+                    <div class="designation" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">Co-founder & COO</div>
+                </div>
+                <div class="section">
+                    <div class="middle">
+                        <img class="img" src="assets/images/logo_back.png" />
+                        <div class="member-pic">
+                            <div class="overlay">
+
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/ayushgupta1998/"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/_ca.ayush_/"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+                            <img data-aos="zoom-in" data-aos-duration="500" src="assets/images/ayushb.png" width="100%" height="100%" />
+                        </div>
+                    </div>
+                    <div class="top" data-aos="fade-up" data-aos-duration="500">CA Ayush Gupta</div>
+                    <div class="designation" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">Mentor & CFO</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="head">
+                <div class="contact-head">Reach out to know more</div>
+            </div>
+            <div class="body">
+                <div class="section" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                    <a href="#">
+                        <img class="img" src="./assets/images/whatsapp.png">
+                    </a>
+                </div>
+                <div class="section" data-aos="fade-up" data-aos-duration="500">
+                    <a href="https://www.facebook.com/yibrance">
+                        <img class="img" src="./assets/images/contact_fb.png">
+                    </a>
+                </div>
+
+                <div class="section" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                    <a href="https://www.instagram.com/yibrance/">
+                        <img class="img" src="./assets/images/contact_insta.png">
+                    </a>
+                </div>
+                <div class="section" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                    <a href="https://www.linkedin.com/company/yibrance">
+                        <img class="img" src="./assets/images/contact_linkedin.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="head" style="padding: 20px;">
+                <div class="text">Download and begin your journey with us</div>
+                <a class="mailto" href="mailto:contactus@yibrance.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp;contactus@yibrance.com</a>
+            </div>
+            <div class="icons" style="padding: 20px;">
+                <a href="#"> <img src="assets/images/googleplay.png"> </a>
+                <a href="#"> <img src="assets/images/appstore.png"> </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+
+
+<script>
+    function nav_scale_up(e) {
+        e.style.transform = "scale(1.5) ";
+    }
+
+    function nav_scale_down(e) {
+        e.style.transform = "scale(1) ";
+    }
+
+    function isInViewport(el) {
+        const rect = el.getBoundingClientRect();
+
+        let width = Number(el.clientWidth);
+        let height = Number(el.clientHeight);
+        let fht = Number(screen.height);
+        let fwd = Number(screen.width);
+
+        return (
+            rect.top <= fht - height &&
+            rect.bottom >= height
+
+        );
+    }
+
+    $(document).ready(() => {
+
+
+        $("#start").find('.content').animate({
+            height: "4px",
+            width: "100vw"
+        }, 1000);
+
+        $("#start").find('.content').animate({
+            height: "100vh",
+            width: "100vw"
+        }, 1000);
+
+        $('.main-logo')[0].style.transform = "scale(0)";
+        $('#barValue')[0].style.transform = "scale(0)";
+
+
+        var value = 0;
+        var bar = $('#helpBar')[0];
+        var loader = $('#loader')[0];
+
+        var main = $('#main')[0];
+
+        document.getElementById("barValue").innerHTML = "Loading " + value.toString() + "%";
+
+
+
+        function fn() { // Loading Animation funtion
+            var cw = document.querySelector('#helpBar').offsetWidth;
+            var fw = document.querySelector('#bar').offsetWidth;
+            value = (Number)(Math.ceil((cw * 100) / fw));
+
+            document.getElementById("barValue").innerHTML = "Loading " + value.toString() + "%";
+        }
+
+        var mainlogoloaded = false;
+
+        loadmainlogo = () => {
+            $('.main-logo')[0].style.transform = "scale(1.2)";
+            $('#barValue')[0].style.transform = "scale(1)";
+        }
+
+        let barResizeObserver = new ResizeObserver(() => {
+            if (!mainlogoloaded) {
+                loadmainlogo();
+            }
+            if (value < 100) {
+                fn();
+            } else {
+                setTimeout(() => {
+                    $('#loader').fadeOut(100);
+
+                    $('.main-logo')[0].style.transform = "scale(1)";
+
+                    // var ht = (screen.width < 800) ? "70vh" : "90vh";
+
+                    $("#start").animate({
+                        height: "80vh"
+                    });
+
+                    $('#mainBody').show();
+
+                    $(".home-nav").animate({
+                        "marginTop": 0
+                    }, 400);
+
+                    $(".about-nav").delay(200).animate({
+                        "marginTop": 0
+                    }, 400);
+
+                    $(".team-nav").delay(400).animate({
+                        "marginTop": 0
+                    }, 400);
+
+                    $(".contact-nav").delay(599).animate({
+                        "marginTop": 0
+                    }, 400);
+
+                    AOS.init({
+                        disable: false,
+                        startEvent: 'DOMContentLoaded',
+                        initClassName: 'aos-init',
+                        animatedClassName: 'aos-animate',
+                        useClassNames: false,
+                        disableMutationObserver: false,
+                        debounceDelay: 50,
+                        throttleDelay: 99,
+                        offset: 120,
+                        delay: 0,
+                        once: false,
+                        mirror: false,
+                        anchorPlacement: 'top-bottom',
+                    });
+
+                }, 500);
+
+            }
+        });
+
+        barResizeObserver.observe(bar);
+
+        // mainResizeObserver = new ResizeObserver(() => {
+        // var ht = (screen.width < 800) ? "70vh" : "90vh";
+        // console.log("djcn");
+
+        // $("#logo_back").animate({
+
+        // })
+
+        // $("#start").animate({
+        //     height: ht
+        // });
+        // });
+
+        // mainResizeObserver.observe(main);
+
+        var heads = [".map-text",
+            ".about-head",
+            ".why-us-head",
+            ".team-head",
+            ".contact-head",
+        ];
+
+        var flags = {};
+
+        var showsvgdisc1 = false;
+        var showsvgdisc2 = false;
+        var showsvgdisc3 = false;
+        heads.forEach((e) => {
+            flags[e] = false;
+            $(e).css("opacity", 0);
+        });
+
+        console.log("jksdc sx", $("#team").offset());
+
+        $('html, body').animate({
+            scrollTop: $("#team").offset().top
+                // scrollLeft: "100px"
+        }, 'slow');
+
+
+
+        $(window).scroll(async() => {
+            heads.forEach(async(e) => {
+                var ele = await document.querySelector(e);
+                // console.log(e, flags[e]);
+                // console.log(ele);
+                if (!flags[e]) {
+
+                    if (isInViewport(ele)) {
+                        $(e).css("opacity", 1);
+                        console.log(e);
+                        flags[e] = true;
+                        $(e).textillate({ in: {
+                                effect: 'rollIn',
+                                delay: 50
+                            }
+                        });
+                    }
+                }
+            });
+
+        });
+
+
+
+
+    });
+</script>
+
+<!-- Bootstrap JS
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script> -->
+
+</html>
