@@ -4,6 +4,10 @@
     --fontFamily: 'BlackChancery', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -303,6 +307,7 @@ a {
     width: 75vw;
     height: auto;
     overflow: scroll;
+    filter: sepia(2) brightness(2.5);
 }
 
 video {
@@ -360,7 +365,6 @@ video {
         /* position: relative; */
         width: 100vw;
         opacity: 0.3;
-        height: 25vh;
     }
     #map .desc .text {
         display: flex;
@@ -373,6 +377,12 @@ video {
     #map .desc .text .map-text {
         width: 80%;
         font-size: 4vw;
+    }
+}
+
+@media (max-width: 599px) {
+    #map .desc img {
+        height: 15vh;
     }
 }
 
@@ -561,7 +571,7 @@ video {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background: radial-gradient(50% 50% at 50% 50%, #B63C3C 0%, #530000 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #943434 0%, #530000 100%);
     /* overflow: hidden; */
 }
 
