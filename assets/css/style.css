@@ -296,11 +296,24 @@ a {
     }
 }
 
+.beforemap {
+    height: 10vh;
+    background: linear-gradient(180deg, #530000 0%, rgba(0, 0, 0, 0.46) 100%);
+}
+
+.aftermap {
+    height: 10vh;
+    background: linear-gradient(180deg, #530000 0%, #160C0C 100%);
+    transform: rotate(-180deg);
+    /* position: relative; */
+}
+
 #map {
     /* min-height: 100vh; */
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: auto;
 }
 
 .mapImg {
@@ -308,6 +321,7 @@ a {
     height: auto;
     overflow: scroll;
     filter: sepia(2) brightness(2.5);
+    opacity: 0.5;
 }
 
 video {
@@ -321,6 +335,8 @@ video {
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
     /* position: absolute; */
 }
 
@@ -360,11 +376,8 @@ video {
     }
     #map .desc {
         width: 100vw;
-    }
-    #map .desc img {
-        /* position: relative; */
-        width: 100vw;
-        opacity: 0.3;
+        height: 20vh;
+        background-color: rgba(0, 0, 0, 0.46);
     }
     #map .desc .text {
         display: flex;
@@ -375,7 +388,7 @@ video {
         width: 100vw;
     }
     #map .desc .text .map-text {
-        width: 80%;
+        width: 50%;
         font-size: 4vw;
     }
 }
@@ -394,6 +407,8 @@ video {
     background-image: url('../../assets/images/about_bg.png');
     background-position: center;
     background-size: 100% 100%;
+    position: relative;
+    margin-top: -10vh;
 }
 
 #about .head {
@@ -612,7 +627,7 @@ video {
 
 #team .body .section .top {
     width: 20vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -625,7 +640,7 @@ video {
 
 #team .body .section .designation {
     width: 20vw;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family: 'Blinker';
 }
 
@@ -798,6 +813,8 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #footer .head {
@@ -805,7 +822,7 @@ video {
     height: 100%;
     font-family: 'Blinker';
     color: #530000;
-    font-size: 3vw;
+    font-size: 2.5vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -814,12 +831,17 @@ video {
 
 #footer .head .mailto {
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
+}
+
+#footer .head .location {
+    color: white;
+    font-size: 1.5vw;
 }
 
 #footer .head .text {
     text-align: left;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 #footer .icons {
@@ -842,10 +864,21 @@ video {
     }
     #footer .head {
         display: flex;
-        font-size: 3.8vw;
+        font-size: 3vw;
     }
     #footer .head .mailto {
         font-size: 3vw;
+    }
+    #footer .head .location {
+        color: white;
+        font-size: 3vw;
+    }
+    #footer .head .mailto i {
+        font-size: 4vw;
+    }
+    #footer .head .location i {
+        color: white;
+        font-size: 4vw;
     }
     #footer .icons {
         flex-direction: column;
