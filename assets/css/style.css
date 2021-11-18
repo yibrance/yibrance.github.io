@@ -853,7 +853,7 @@ video {
     height: 100%;
 }
 
-#footer .icons a img {
+.download-app {
     width: 17vw;
     /* min-width: 180px; */
 }
@@ -883,7 +883,7 @@ video {
     #footer .icons {
         flex-direction: column;
     }
-    #footer .icons a img {
+    .download-app {
         width: 23vw;
         /* max-width: 20vw; */
         min-width: 50px;
