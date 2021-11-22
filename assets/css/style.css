@@ -889,3 +889,13 @@ video {
         min-width: 50px;
     }
 }
+
+#videos {
+    width: 100vw;
+}
+
+.merchantVideo {
+    width: 100vw;
+    height: 58vw;
+    max-height: 100vh;
+}
