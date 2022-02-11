@@ -26,6 +26,24 @@ a {
     width: 100vw;
 }
 
+.main-tag {
+    margin-top: -100px;
+    text-align: center;
+    font-family: 'Redressed';
+    font-size: max(20px, min(5vw, 30px));
+    color: rgba(247, 170, 32, 0.59);
+    text-shadow: 0px 4px 4px #000;
+}
+
+@media (max-width: 599px) {
+    #main {
+        height: 70vh;
+    }
+    .main-tag {
+        margin-top: -150px;
+    }
+}
+
 #main .banner {
     width: 100vw;
     min-height: 80vh;
@@ -189,7 +207,8 @@ a {
 .logo_back {
     height: auto;
     width: 50vw;
-    max-width: 400px;
+    max-width: 350px;
+    /* margin-left: 10px; */
     position: relative;
     animation: logo_back 12s linear infinite forwards;
     transition: all 0.2s;
@@ -199,6 +218,7 @@ a {
     height: auto;
     width: 50vw;
     max-width: 400px;
+    text-align: center;
     position: absolute;
     transition: all 0.2s;
 }
@@ -299,6 +319,7 @@ a {
 .beforemap {
     height: 10vh;
     background: linear-gradient(180deg, #530000 0%, rgba(0, 0, 0, 0.46) 100%);
+    /* filter: blur(5px); */
 }
 
 .aftermap {
@@ -377,6 +398,7 @@ video {
     #map .desc {
         width: 100vw;
         height: 20vh;
+        padding-top: 3vh;
         background-color: rgba(0, 0, 0, 0.46);
     }
     #map .desc .text {
@@ -730,9 +752,15 @@ video {
     }
     #team .body .section {
         font-size: 5vw;
+        min-width: 30vw;
+        margin-right: 8vw;
+        margin-left: 8vw;
+        margin-bottom: 10vh;
     }
     #team .body {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
     }
 }
 
@@ -741,6 +769,7 @@ video {
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
+    /* column-count: 2; */
     align-items: center;
     justify-content: center;
     background-image: url('../../assets/images/contact_bg.png');
@@ -768,16 +797,16 @@ video {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #contact .body .section a .img {
-    width: 13vw;
+    width: 5vw;
     height: auto;
-    max-width: 250px;
-    max-height: 250px;
-    min-width: 150px;
-    min-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 70px;
+    min-height: 70px;
 }
 
 #contact .body .section {
@@ -797,11 +826,19 @@ video {
     #contact .head {
         font-size: 5vw;
     }
+    #contact .body {
+        width: 100vw;
+    }
     #contact .body .section {
         font-size: 4vw;
+        width: 5vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
     }
     #contact .body {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
     }
 }
 
